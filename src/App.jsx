@@ -1,7 +1,9 @@
 import { Aside } from "./components/Aside"
+import Card from "./components/Card"
 import { Container } from "./components/Container"
 import { Main } from "./components/Main"
 import { SearchInput } from "./components/SearchInput"
+import { Typography } from "./components/Typography"
 
 
 function App() {
@@ -11,7 +13,49 @@ function App() {
       <Container>
         <Aside />
         <Main>
-          <SearchInput name="q"/>
+          <SearchInput name="q" />
+          <div className="flex flex-col gap-[8px]">
+            <Typography variant="h1">
+              Olá, Levi!
+            </Typography>
+            <Typography>
+              Veja como estão suas finanças hoje.
+            </Typography>
+          </div>
+          <section>
+            <Card>
+              <Card.Header>
+                Orçamento diário disponível:
+              </Card.Header>
+              <Card.Body>
+                R$200
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>
+                Progresso da meta financeira
+              </Card.Header>
+              <Card.Body>
+                R$200
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>
+                Movimentação financeira
+              </Card.Header>
+              <Card.Body>
+                R$200
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>
+                Minhas contas
+              </Card.Header>
+              <Card.Body>
+                R$200
+              </Card.Body>
+            </Card>
+          </section>
         </Main>
       </Container>
     </div>
