@@ -1,7 +1,9 @@
 import { Aside } from "./components/Aside"
 import Card from "./components/Card"
 import { Container } from "./components/Container"
+import { DailyBudget } from "./components/DailyBudget"
 import { Main } from "./components/Main"
+import { SavingStatus } from "./components/SavingStatus"
 import { SearchInput } from "./components/SearchInput"
 import { Typography } from "./components/Typography"
 
@@ -28,7 +30,7 @@ function App() {
                 Orçamento diário disponível:
               </Card.Header>
               <Card.Body>
-                R$200
+                <DailyBudget value={42}/>
               </Card.Body>
             </Card>
             <Card>
@@ -36,7 +38,7 @@ function App() {
                 Progresso da meta financeira
               </Card.Header>
               <Card.Body>
-                R$200
+                <SavingStatus />
               </Card.Body>
             </Card>
             <Card>
